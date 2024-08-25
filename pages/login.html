@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="../img/col-img.png" alt="col-img">
+        </div>
+        <div class="form-container">
+            <div id="form-login">
+                <h1>Portfolio</h1>
+                <h2><a href="../index.html">Home</a></h2>
+                <div class="nav-links">
+                    <button id="btn-open" class="btn-active" onclick="transitionForm()">Entrar</button>
+                    <button id="btn-register" onclick="transitionForm()">Cadastro</button>
+                </div>
+                <form>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="password" id="password" name="password" placeholder="Senha">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div id="form-register" class="hidden">
+                <h1>Portfolio</h1>
+                <h2><a href="../index.html">Home</a></h2>
+                <div class="nav-links">
+                    <button id="btn-open" onclick="transitionForm()">Entrar</button>
+                    <button id="btn-register" class="btn-active" onclick="transitionForm()">Cadastro</button>
+                </div>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Nome">
+                    <input type="email" id="email-register" name="email-register" placeholder="Email">
+                    <input type="password" id="password-register" name="password-register" placeholder="Senha">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar Senha">
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/transition.js"></script>
+</body>
+</html>
