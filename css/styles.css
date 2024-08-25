@@ -1,3 +1,25 @@
+:root {
+    --primary-color: #070bf7;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --border-radius: 10px;
+    --transition-time: 0.3s;
+}
+
+
+.icon-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--primary-color);
+    transition: color var(--transition-time);
+}
+
+.icon-button:hover {
+    color: darken(var(--primary-color), 10%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +32,54 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
+}
+
+/* Estilos para o ícone de alternância de modo escuro */
+.dark-mode-icon {
+    width: 24px;
+    height: 24px;
+    background: url('path/to/gear-icon.png') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Estilo para modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .image-container {
+    background-color: #333;
+}
+
+body.dark-mode form input {
+    background-color: #424242;
+    border-color: #616161;
+    color: #e0e0e0;
+}
+
+body.dark-mode form button {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-mode .nav-links button {
+    color: #e0e0e0;
+}
+
+/* Para garantir que a estilização do modo escuro cubra toda a página */
+body {
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -20,15 +89,15 @@ body {
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     width: 900px;
     height: 500px;
 }
 
 .image-container {
-    background-color: #070bf7;
+    background-color: var(--primary-color);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     flex: 1;
     display: flex;
     justify-content: center;
@@ -38,6 +107,8 @@ body {
 .image-container img {
     max-width: 100%;
     height: auto;
+    /* Lazy Loading */
+    loading: lazy;
 }
 
 .form-container {
@@ -53,7 +124,7 @@ body {
 }
 
 h1 {
-    color: #070bf7;
+    color: var(--primary-color);
     text-align: center;
     font-size: 24px;
     margin-bottom: 10px;
@@ -73,7 +144,7 @@ h2 {
     width: 200px;
     height: 50px;
     margin: 0 auto 20px;
-    background: #f0f0f0;
+    background: var(--background-color);
     border-radius: 25px;
     overflow: hidden;
     border: 1px solid #ccc;
@@ -82,25 +153,21 @@ h2 {
 .nav-links button {
     background: transparent;
     border: none;
-    color: #333;
+    color: var(--text-color);
     cursor: pointer;
     padding: 10px;
     font-size: 16px;
     width: 50%;
-    transition: background 0.3s, color 0.3s;
+    transition: background var(--transition-time), color var(--transition-time);
 }
 
 .nav-links #btn-open {
     border-right: 1px solid #ccc;
 }
 
-.nav-links .btn-active {
-    background-color: #070bf7;
-    color: white;
-}
-
+.nav-links .btn-active,
 .nav-links button:hover {
-    background-color: #070bf7;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -122,17 +189,18 @@ form input {
 
 form button {
     padding: 10px;
-    background-color: #070bf7;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 100px;
     margin-top: 10px;
+    transition: background var(--transition-time);
 }
 
 form button:hover {
-    background-color: #070bf7;
+    background-color: var(--primary-color);
 }
 
 /* Responsividade */

@@ -5,18 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         { 
             title: "Controle de Estoque", 
-            description: "Descrição do projeto 1.", 
-            imageUrl: "img/projeto1.png" // Substitua pelo caminho da imagem
+            description: "É uma aplicação robusta de controle de estoque desenvolvida em Java, projetada para otimizar a gestão de inventário em empresas de diversos tamanhos. A solução permite o acompanhamento em tempo real do nível de estoque, facilitando a organização e o planejamento. Com uma interface intuitiva e funcionalidades como alertas de estoque baixo, relatórios detalhados e integração com outras ferramentas empresariais, garantindo precisão e eficiência na gestão dos recursos, contribuindo diretamente para a redução de custos e o aumento da produtividade..", 
+            imageUrl: "img/projeto1.png" 
         },
         { 
             title: "Gerador de Cupons", 
-            description: "Descrição do projeto 2.", 
-            imageUrl: "img/projeto2.png" // Substitua pelo caminho da imagem
+            description: "Desenvolvemos uma aplicação de cupons integrada ao sistema Gesfood, que facilita o envio de cupons diretamente para o e-mail dos clientes. Criada com Java e Thymeleaf, a solução automatiza o processo de geração e envio dos cupons, garantindo que cada cupom já esteja pré-cadastrado no sistema Gesfood, oferecendo uma experiência eficiente e confiável tanto para os clientes quanto para a administração do restaurante.", 
+            imageUrl: "img/projeto2.png" 
         },
         { 
             title: "Site de agencia de viagens", 
-            description: "Descrição do projeto 3.", 
-            imageUrl: "img/projeto3.png" // Substitua pelo caminho da imagem
+            description: "Site completo para uma agência de viagens, utilizando HTML, CSS e JavaScript. O site foi projetado para oferecer uma experiência de usuário intuitiva e visualmente atraente, com recursos como busca de destinos, pacotes promocionais e formulários de contato dinâmicos. Cada detalhe foi pensado para facilitar a navegação e inspirar os clientes a encontrar a viagem dos seus sonhos, garantindo uma jornada online agradável desde a primeira visita ao site.", 
+            imageUrl: "img/projeto3.png" 
         }
     ];
 
